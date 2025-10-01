@@ -28,6 +28,30 @@ export default function RootLayout({
         <Analytics />
         <Script 
           src="https://fpyf8.com/88/tag.min.js" 
+          data-zone="175053" 
+          data-cfasync="false" 
+          strategy="lazyOnload"
+        />
+        <Script 
+          src="https://fpyf8.com/88/tag.min.js" 
+          data-zone="175052" 
+          data-cfasync="false" 
+          strategy="lazyOnload"
+        />
+        <Script 
+          src="https://fpyf8.com/88/tag.min.js" 
+          data-zone="175051" 
+          data-cfasync="false" 
+          strategy="lazyOnload"
+        />
+        <Script 
+          src="https://fpyf8.com/88/tag.min.js" 
+          data-zone="175050" 
+          data-cfasync="false" 
+          strategy="lazyOnload"
+        />
+        <Script 
+          src="https://fpyf8.com/88/tag.min.js" 
           data-zone="175036" 
           data-cfasync="false" 
           strategy="lazyOnload"
