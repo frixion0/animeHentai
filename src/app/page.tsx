@@ -6,7 +6,6 @@ export default function Home() {
         src="https://animehentai.art/"
         title="Seamless Viewer"
         className="h-full w-full border-0"
-        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
       />
     </main>
   );
