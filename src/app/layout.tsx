@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Seamless Viewer',
@@ -20,12 +21,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-        <script src="https://fpyf8.com/88/tag.min.js" data-zone="175036" async data-cfasync="false"></script>
       </head>
       <body className="font-body antialiased">
         {children}
         <Toaster />
         <Analytics />
+        <Script 
+          src="https://fpyf8.com/88/tag.min.js" 
+          data-zone="175036" 
+          data-cfasync="false" 
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
