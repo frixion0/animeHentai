@@ -20,6 +20,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+        <script src="https://fpyf8.com/88/tag.min.js" data-zone="175036" async data-cfasync="false"></script>
       </head>
       <body className="font-body antialiased">
         {children}
