@@ -17,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="monetag" content="ed85afb75b5845ce30362b00811dad14" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
@@ -26,31 +25,6 @@ export default function RootLayout({
         {children}
         <Toaster />
         <Analytics />
-        <Script 
-          src="//fpyf8.com/88/tag.min.js"
-          data-zone="175053"
-          strategy="lazyOnload"
-        />
-        <Script 
-          src="//fpyf8.com/88/tag.min.js"
-          data-zone="175052"
-          strategy="lazyOnload"
-        />
-        <Script 
-          src="//fpyf8.com/88/tag.min.js"
-          data-zone="175051"
-          strategy="lazyOnload"
-        />
-        <Script 
-          src="//fpyf8.com/88/tag.min.js"
-          data-zone="175050"
-          strategy="lazyOnload"
-        />
-        <Script 
-          src="//fpyf8.com/88/tag.min.js"
-          data-zone="175036"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );
