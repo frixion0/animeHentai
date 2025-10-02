@@ -2,7 +2,9 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from '@vercel/analytics/react';
-import Script from 'next/script';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'Seamless Viewer',
@@ -16,158 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta name="284a29da8e86fddb4e740c1ef6d272ec429e0201" content="284a29da8e86fddb4e740c1ef6d272ec429e0201" />
-        <meta name="referrer" content="no-referrer-when-downgrade" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+      <body className={`${inter.variable} font-body antialiased`}>
         {children}
         <Toaster />
         <Analytics />
-        <Script id="ad-script-1" strategy="lazyOnload">
-          {`
-            (function(dmmt){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = dmmt || {};
-            s.src = "//thickteaching.com/cZD.9R6/ba2I5klfSCWuQk9CN/jAYG2pNnTWIj3kMliV0/2/NWjKYB1eMhj/c/zQ";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-2" strategy="lazyOnload">
-          {`
-            (function(rnc){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = rnc || {};
-            s.src = "//thickteaching.com/cDDj9.6GbC2o5ylkS/WHQQ9/N/jXYo2/NoTdIQ3jMLi/0X2ONfjYY/1hMDjkcSzd";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-3" strategy="lazyOnload">
-          {`
-            (function(uqlf){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = uqlf || {};
-            s.src = "//magnificentworker.com/bjXXVDsfd.G_l/0aY/WjcP/hekmx9ru/ZrULl/kQPXT/Y/2/Nmj/Un1ENzzrcZtsNYjQYL2HNNT/Un3JOVAl";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-4" strategy="lazyOnload">
-          {`
-            (function(drrwji){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = drrwji || {};
-            s.src = "//magnificentworker.com/blXAV.swdTGGlS0-YJWwcV/beVmL9wuVZTUWlKkNPYT/YD2sNDjrUA1SOQD/E_tNNbj/YT2NNeT/Uc4NMmgq";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-5" strategy="lazyOnload">
-          {`
-            (function(palei){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = palei || {};
-            s.src = "//magnificentworker.com/b/XlVVsad.Gjld0MY/W_cI/Jepmb9nurZMU/lrk_P/TCYP2/N/jvUc1EO/DJUit/NvjOYr2VNtTRUM4LNygx";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-6" strategy="lazyOnload">
-          {`
-            (function(eazud){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = eazud || {};
-            s.src = "//thickteaching.com/c.Dj9F6kbi2/5pllS_WVQp9WN/jlYW2_NGTCIj3yM/iu0s2eNAj/Yz1UMwjocOzK";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-7" strategy="lazyOnload">
-          {`
-            (function(cluuql){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = cluuql || {};
-            s.src = "//magnificentworker.com/b.XOVYsvd/G/li0qYyWKce/Gejmm9SuOZXUulHkRPeT_YH2SN/jgUA1oO/D/U/tmNGjlYg2jNWT_U/4/NfgD";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-8" strategy="lazyOnload">
-          {`
-            (function(sltci){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = sltci || {};
-            s.src = "//magnificentworker.com/b-XYVQsVd.GNl/0XYyW/cZ/GeQmF9KuVZPUQlXkvPdT/YK2PNOjpUP1mOwDEEYtqNYjxY/2iNXT/UR4ZMTgs";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-9" strategy="lazyOnload">
-          {`
-            (function(zn){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = zn || {};
-            s.src = "//magnificentworker.com/b/X.VZsidDGSlW0/Y_WScp/veqmy9NuhZpUPlMkVPZTUYA2QN/jdUe1qNqzecutfNTjUY/2zNfTGUv3vOnAx";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-10" strategy="lazyOnload">
-          {`
-            (function(vyn){
-            var d = document,
-                s = d.createElement('script'),
-                l = d.scripts[d.scripts.length - 1];
-            s.settings = vyn || {};
-            s.src = "//thickteaching.com/c.Dv9/6qb/2o5WlzSuWqQp9_N/jHY/2ANRT/Ib3BMtij0E2/N/jSYg1-MojhcYzH";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-            })({})
-          `}
-        </Script>
-        <Script id="ad-script-11" strategy="lazyOnload" src="https://thickteaching.com/dBmFFgz.djGWNLvhZYGQUy/sepmS9xuHZOU/l/kcPdTtYZ2sNmjtU/2vNpTMAutuN/j/Yq2-NQTIYJ1uM_QF" />
       </body>
     </html>
   );
