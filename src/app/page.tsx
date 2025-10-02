@@ -5,6 +5,7 @@ export default function Home() {
         src="https://animehentai.art/"
         className="h-full w-full border-none"
         title="Seamless Viewer"
+        loading="lazy"
       />
     </main>
   );
