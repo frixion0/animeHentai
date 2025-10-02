@@ -73,6 +73,52 @@ export default function RootLayout({
             })({})
           `}
         </Script>
+        <Script id="ad-script-4" strategy="lazyOnload">
+          {`
+            (function(vcd){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = vcd || {};
+            s.src = "\\/\\/magnificentworker.com\\/bZXPVIs.dZG-la0WYyW\\/cw\\/OesmD9yu\\/ZOUrl\\/k\\/PsTmYi2yN\\/jjUH1_OCDhEVt\\/NTjYYN2ZNETFUs4TMLgT";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-5" strategy="lazyOnload">
+          {`
+            (function(upa){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = upa || {};
+            s.src = "\\/\\/magnificentworker.com\\/brX.V\\/s-dfGHlw0-YNWjcU\\/lezmu9-urZxUblJkvPaTtYY2TNSjNUg1sNUzxcFtcNsjEYo2wNATOUP3FOtAO";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-6" strategy="lazyOnload">
+          {`
+            (function(ucxwc){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = ucxwc || {};
+            s.src = "\\/\\/thickteaching.com\\/ccDg9\\/6.b\\/2\\/5_llSuW\\/Qw9ANxjqYH2JNbT\\/IU3qM\\/i\\/0T2TNrjzYs1\\/M\\/jjckzA";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script
+          strategy="lazyOnload"
+          src="//thickteaching.com/dCmIF.zyd/GzNJvfZZGRUv/hebmD9kurZVUYllkLP/TOYp2RNBj_U/2/NFTLANtEN/jNY/2TNrTrYP1kMWQU"
+        />
       </body>
     </html>
   );
