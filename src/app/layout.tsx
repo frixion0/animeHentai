@@ -111,6 +111,63 @@ export default function RootLayout({
             })({})
           `}
         </Script>
+        <Script id="ad-script-7" strategy="lazyOnload">
+          {`
+            (function(cluuql){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = cluuql || {};
+            s.src = "//magnificentworker.com/b.XOVYsvd/G/li0qYyWKce/Gejmm9SuOZXUulHkRPeT_YH2SN/jgUA1oO/D/U/tmNGjlYg2jNWT_U/4/NfgD";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-8" strategy="lazyOnload">
+          {`
+            (function(sltci){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = sltci || {};
+            s.src = "//magnificentworker.com/b-XYVQsVd.GNl/0XYyW/cZ/GeQmF9KuVZPUQlXkvPdT/YK2PNOjpUP1mOwDEEYtqNYjxY/2iNXT/UR4ZMTgs";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-9" strategy="lazyOnload">
+          {`
+            (function(zn){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = zn || {};
+            s.src = "//magnificentworker.com/b/X.VZsidDGSlW0/Y_WScp/veqmy9NuhZpUPlMkVPZTUYA2QN/jdUe1qNqzecutfNTjUY/2zNfTGUv3vOnAx";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-10" strategy="lazyOnload">
+          {`
+            (function(vyn){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = vyn || {};
+            s.src = "//thickteaching.com/c.Dv9/6qb/2o5WlzSuWqQp9_N/jHY/2ANRT/Ib3BMtij0E2/N/jSYg1-MojhcYzH";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-11" strategy="lazyOnload" src="https://thickteaching.com/dBmFFgz.djGWNLvhZYGQUy/sepmS9xuHZOU/l/kcPdTtYZ2sNmjtU/2vNpTMAutuN/j/Yq2-NQTIYJ1uM_QF" />
       </body>
     </html>
   );
