@@ -26,6 +26,20 @@ export default function RootLayout({
         {children}
         <Toaster />
         <Analytics />
+        <Script id="new-ad-script" strategy="lazyOnload">
+          {`
+            (function(dmmt){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = dmmt || {};
+            s.src = "//thickteaching.com/cZD.9R6/ba2I5klfSCWuQk9CN/jAYG2pNnTWIj3kMliV0/2/NWjKYB1eMhj/c/zQ";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
       </body>
     </html>
   );
