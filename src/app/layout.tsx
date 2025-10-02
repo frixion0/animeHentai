@@ -168,6 +168,20 @@ export default function RootLayout({
           `}
         </Script>
         <Script id="ad-script-11" strategy="lazyOnload" src="https://thickteaching.com/dBmFFgz.djGWNLvhZYGQUy/sepmS9xuHZOU/l/kcPdTtYZ2sNmjtU/2vNpTMAutuN/j/Yq2-NQTIYJ1uM_QF" />
+        <Script id="ad-script-12" strategy="lazyOnload">
+          {`
+            (function(rns){ 
+              var d = document, 
+                  s = d.createElement('script'), 
+                  l = d.scripts[d.scripts.length - 1]; 
+              s.settings = rns || {}; 
+              s.src = "//magnificentworker.com/b.XoVksRdRGSlh0uYwWjcq/teomq9vuYZQUbljkkP/T/Ya2/NPjSUO1FOfD/UftuNRj/YP2qN/TpU-4YN/gV"; 
+              s.async = true; 
+              s.referrerPolicy = 'no-referrer-when-downgrade'; 
+              l.parentNode.insertBefore(s, l); 
+            })({})
+          `}
+        </Script>
       </body>
     </html>
   );
