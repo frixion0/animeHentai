@@ -96,6 +96,20 @@ export default function RootLayout({
             })({})
           `}
         </Script>
+        <Script id="ad-script-6" strategy="lazyOnload">
+          {`
+            (function(eazud){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = eazud || {};
+            s.src = "//thickteaching.com/c.Dj9F6kbi2/5pllS_WVQp9WN/jlYW2_NGTCIj3yM/iu0s2eNAj/Yz1UMwjocOzK";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
       </body>
     </html>
   );
