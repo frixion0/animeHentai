@@ -26,7 +26,7 @@ export default function RootLayout({
         {children}
         <Toaster />
         <Analytics />
-        <Script id="new-ad-script" strategy="lazyOnload">
+        <Script id="ad-script-1" strategy="lazyOnload">
           {`
             (function(dmmt){
             var d = document,
@@ -34,6 +34,62 @@ export default function RootLayout({
                 l = d.scripts[d.scripts.length - 1];
             s.settings = dmmt || {};
             s.src = "//thickteaching.com/cZD.9R6/ba2I5klfSCWuQk9CN/jAYG2pNnTWIj3kMliV0/2/NWjKYB1eMhj/c/zQ";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-2" strategy="lazyOnload">
+          {`
+            (function(rnc){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = rnc || {};
+            s.src = "//thickteaching.com/cDDj9.6GbC2o5ylkS/WHQQ9/N/jXYo2/NoTdIQ3jMLi/0X2ONfjYY/1hMDjkcSzd";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-3" strategy="lazyOnload">
+          {`
+            (function(uqlf){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = uqlf || {};
+            s.src = "//magnificentworker.com/bjXXVDsfd.G_l/0aY/WjcP/hekmx9ru/ZrULl/kQPXT/Y/2/Nmj/Un1ENzzrcZtsNYjQYL2HNNT/Un3JOVAl";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-4" strategy="lazyOnload">
+          {`
+            (function(drrwji){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = drrwji || {};
+            s.src = "//magnificentworker.com/blXAV.swdTGGlS0-YJWwcV/beVmL9wuVZTUWlKkNPYT/YD2sNDjrUA1SOQD/E_tNNbj/YT2NNeT/Uc4NMmgq";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
+        <Script id="ad-script-5" strategy="lazyOnload">
+          {`
+            (function(palei){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = palei || {};
+            s.src = "//magnificentworker.com/b/XlVVsad.Gjld0MY/W_cI/Jepmb9nurZMU/lrk_P/TCYP2/N/jvUc1EO/DJUit/NvjOYr2VNtTRUM4LNygx";
             s.async = true;
             s.referrerPolicy = 'no-referrer-when-downgrade';
             l.parentNode.insertBefore(s, l);
