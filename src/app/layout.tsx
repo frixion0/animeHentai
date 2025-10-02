@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   description: 'Seamlessly view your favorite websites.',
   other: {
     '284a29da8e86fddb4e740c1ef6d272ec429e0201': '284a29da8e86fddb4e740c1ef6d272ec429e0201',
-  }
+  },
+  referrer: 'no-referrer-when-downgrade',
 };
 
 export default function RootLayout({
