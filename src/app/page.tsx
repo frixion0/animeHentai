@@ -6,6 +6,7 @@ export default function Home() {
         className="h-full w-full border-none"
         title="Seamless Viewer"
         loading="lazy"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
       />
     </main>
   );
