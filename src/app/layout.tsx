@@ -79,45 +79,32 @@ export default function RootLayout({
         <Script strategy="lazyOnload" id="pop-under">
           {`
             (function() {
-                // --- Configuration ---
-                // ⬅️ YOUR LINK: The pop-under will open this URL.
-                const TARGET_URL = 'https://thickteaching.com/NQ1W6a'; 
-                const POP_DELAY_MS = 100; // Small delay to decouple the pop from the event
-                // ---------------------
+                const TARGET_URL = 'https://thickteaching.com/NQ1W6a';
+                const SESSION_KEY = 'popunder_shown';
 
-                /**
-                 * The core pop-under logic.
-                 * @param {Event} e - The triggering event (click/mousedown).
-                 */
-                function handlePop(e) {
-                    // Use a setTimeout to decouple the window.open call from the immediate event handler,
-                    // which helps avoid some modern browser blockers.
-                    setTimeout(function() {
-                        // Attempt to open the pop-under window
-                        const win = window.open(TARGET_URL, '_blank', 'width=1,height=1,left=9999,top=9999');
-
-                        // --- Pop-Under Effect ---
-                        // If the window successfully opened, try to push it under the main window.
-                        if (win && !win.closed) {
-                            // Focus the main window to put the new one "under" it.
-                            window.focus();
-                            try {
-                                // Attempt to unfocus the new window for extra measure
-                                win.blur(); 
-                            } catch(err) {
-                                // Ignore errors if blurring isn't allowed
-                            }
-                        }
-                    }, POP_DELAY_MS);
-
-                    // The { once: true } option ensures this function is automatically removed
-                    // from the listener list after this single execution.
+                // Check if the pop-under has already been shown in this session
+                if (sessionStorage.getItem(SESSION_KEY)) {
+                    return;
                 }
 
-                // Attach the event listener to the entire document.
-                // 'mousedown' is used for an aggressive, early trigger.
-                document.addEventListener('mousedown', handlePop, { once: true });
-
+                // Function to open the pop-under
+                function openPopunder() {
+                    const win = window.open(TARGET_URL, '_blank');
+                    if (win) {
+                        // Mark as shown for this session
+                        sessionStorage.setItem(SESSION_KEY, 'true');
+                        // Try to focus the main window to push the pop-under to the background
+                        window.focus();
+                        try {
+                           win.blur();
+                        } catch (e) {
+                           // Ignore errors, some browsers may prevent this
+                        }
+                    }
+                }
+                
+                // Open the pop-under right away
+                openPopunder();
             })();
           `}
         </Script>
