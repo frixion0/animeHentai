@@ -107,6 +107,20 @@ export default function RootLayout({
             })();
           `}
         </Script>
+        <Script strategy="lazyOnload" id="tih">
+          {`
+            (function(tih){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = tih || {};
+            s.src = "//thickteaching.com/cEDT9.6ObW2l5mlQSNWcQK9/NYjNY/2zN-TjId3XMzij0C2SN/j_Y/1/Mxj/cGzi";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+          `}
+        </Script>
       </body>
     </html>
   );
