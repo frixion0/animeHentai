@@ -82,13 +82,12 @@ export default function RootLayout({
                 const TARGET_URL = 'https://thickteaching.com/NQ1W6a';
                 const SESSION_KEY = 'popunder_shown';
 
-                // Check if the pop-under has already been shown in this session
-                if (sessionStorage.getItem(SESSION_KEY)) {
-                    return;
-                }
-
-                // Function to open the pop-under
                 function openPopunder() {
+                    // Check if the pop-under has already been shown in this session
+                    if (sessionStorage.getItem(SESSION_KEY)) {
+                        return;
+                    }
+
                     const win = window.open(TARGET_URL, '_blank');
                     if (win) {
                         // Mark as shown for this session
@@ -103,8 +102,8 @@ export default function RootLayout({
                     }
                 }
                 
-                // Open the pop-under right away
-                openPopunder();
+                // Attach the event listener to the entire document, to be triggered only once.
+                document.addEventListener('click', openPopunder, { once: true });
             })();
           `}
         </Script>
