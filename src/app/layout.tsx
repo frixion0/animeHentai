@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="google-site-verification" content="r_Cs1I095TCgM9oTeFqXpnCRIDX28erq88hy1KZfTbM" />
       </head>
       <body className={`${inter.variable} font-body antialiased`}>
         {children}
