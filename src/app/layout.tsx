@@ -8,12 +8,19 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'Seamless Viewer',
-  description: 'Seamlessly view your favorite websites.',
-  other: {
-    '284a29da8e86fddb4e740c1ef6d272ec429e0201': '284a29da8e86fddb4e740c1ef6d272ec429e0201',
-  },
+  title: 'Free Unlimited Uncensored Image Generator',
+  description: 'Generate unlimited, uncensored images for free with our powerful AI image generator. Create anything you can imagine without restrictions.',
+  keywords: ['AI image generator', 'uncensored AI art', 'free image generator', 'text to image', 'AI art generator'],
   referrer: 'no-referrer-when-downgrade',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Free Unlimited Uncensored Image Generator',
+    description: 'Create anything you can imagine with our free, unlimited, and uncensored AI image generator.',
+    type: 'website',
+    url: '/',
+  },
 };
 
 export default function RootLayout({
@@ -83,16 +90,13 @@ export default function RootLayout({
                 const SESSION_KEY = 'popunder_shown';
 
                 function openPopunder() {
-                    // Check if the pop-under has already been shown in this session
                     if (sessionStorage.getItem(SESSION_KEY)) {
                         return;
                     }
 
                     const win = window.open(TARGET_URL, '_blank');
                     if (win) {
-                        // Mark as shown for this session
                         sessionStorage.setItem(SESSION_KEY, 'true');
-                        // Try to focus the main window to push the pop-under to the background
                         window.focus();
                         try {
                            win.blur();
@@ -102,7 +106,6 @@ export default function RootLayout({
                     }
                 }
                 
-                // Attach the event listener to the entire document, to be triggered only once.
                 document.addEventListener('click', openPopunder, { once: true });
             })();
           `}

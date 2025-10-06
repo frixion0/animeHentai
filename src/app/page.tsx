@@ -4,7 +4,7 @@ export default function Home() {
       <iframe
         src="https://animehentai.art/"
         className="h-full w-full border-none"
-        title="Seamless Viewer"
+        title="Free Unlimited Uncensored Image Generator"
         loading="lazy"
         sandbox="allow-scripts allow-same-origin"
       />
