@@ -1,13 +1,15 @@
+'use client';
+
+import { useEffect } from 'react';
+
 export default function Home() {
+  useEffect(() => {
+    window.location.href = 'https://freeaigenerator.vercel.app/';
+  }, []);
+
   return (
-    <main className="flex h-screen w-screen overflow-hidden">
-      <iframe
-        src="https://animehentai.art/"
-        className="h-full w-full border-none"
-        title="Free Unlimited Uncensored Image Generator"
-        loading="lazy"
-        sandbox="allow-scripts allow-same-origin"
-      />
+    <main className="flex h-screen w-screen items-center justify-center bg-background text-foreground">
+      <p>Redirecting...</p>
     </main>
   );
 }
